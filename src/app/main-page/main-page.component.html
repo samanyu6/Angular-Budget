@@ -11,6 +11,12 @@
 <!-- Add/ Delete new transactions -->
 <div class="add-item-section">
     <div class="add-item-container">
-        <app-add-item-form style="padding: 20px;"></app-add-item-form>
+        <!-- catches event from item form and submits the event to the model. -->
+        <app-add-item-form style="padding: 20px;" (formSubmit)="addItem($event)"></app-add-item-form>
     </div>
 </div>
+
+<hr style="margin-top:10;"/>
+
+<!-- Budget data -->
+<app-budget-item-list [budgetItems]="budgetItems"></app-budget-item-list>
