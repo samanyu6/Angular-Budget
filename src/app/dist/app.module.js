@@ -16,6 +16,8 @@ var add_item_form_component_1 = require("./add-item-form/add-item-form.component
 var budget_item_list_component_1 = require("./budget-item-list/budget-item-list.component");
 var budget_item_card_component_1 = require("./budget-item-list/budget-item-card/budget-item-card.component");
 var forms_1 = require("@angular/forms");
+var edit_item_modal_component_1 = require("./edit-item-modal/edit-item-modal.component");
+var animations_1 = require("@angular/platform-browser/animations");
 var AppModule = /** @class */ (function () {
     function AppModule() {
     }
@@ -26,12 +28,14 @@ var AppModule = /** @class */ (function () {
                 main_page_component_1.MainPageComponent,
                 add_item_form_component_1.AddItemFormComponent,
                 budget_item_list_component_1.BudgetItemListComponent,
-                budget_item_card_component_1.BudgetItemCardComponent
+                budget_item_card_component_1.BudgetItemCardComponent,
+                edit_item_modal_component_1.EditItemModalComponent
             ],
             imports: [
                 platform_browser_1.BrowserModule,
                 app_routing_module_1.AppRoutingModule,
-                forms_1.FormsModule
+                forms_1.FormsModule,
+                animations_1.BrowserAnimationsModule
             ],
             providers: [],
             bootstrap: [app_component_1.AppComponent]
