@@ -1,7 +1,7 @@
 @charset "utf-8";
 
 // Import a Google Font
-@import url('https://fonts.googleapis.com/css?family=Nunito:400,700| Lato:300,900');
+@import url('https://fonts.googleapis.com/css2?family=Alata&display=swap');
 
 // Set your brand colors
 $purple: rgb(159,104,235);
@@ -15,7 +15,7 @@ $red: #dc3900;
 $light-red: #ffe5e3;
 
 // Update Bulma's global variables
-$family-sans-serif: "Nunito", sans-serif;
+$family-sans-serif: "Alata", sans-serif;
 $primary: $purple;
 $link: $purple;
 
@@ -23,4 +23,5 @@ $link: $purple;
 $body-background-color: white;
 $control-border-width: 2px;
 $input-border-color: transparent;
+$input-background-color : $light-grey;
 $input-shadow: none;

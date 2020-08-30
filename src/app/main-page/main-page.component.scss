@@ -17,5 +17,36 @@
 }
 
 .budget-total{
-    
+    display: flex;
+    height: 250px;
+    width: 100%;
+    background-color: $dark;
+    justify-content: center;
+    align-items: center;
+
+    h2 {
+        font-family: 'Alata';
+        font-weight: 900;
+        font-size: 64px;
+
+        &.green {
+            color: lighten($green, 5%)
+        }
+
+        &.red{
+            color: lighten($red, 15%)
+        }
+    }
+}
+
+.add-item-section{
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    .add-item-container{
+        height: 75px;
+
+    }
 }

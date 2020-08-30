@@ -1,4 +1,4 @@
-@import url("https://fonts.googleapis.com/css?family=Nunito:400,700| Lato:300,900");
+@import url("https://fonts.googleapis.com/css2?family=Alata&display=swap");
 .top-bar {
   display: flex;
   width: 100%;
@@ -12,4 +12,33 @@
   font-size: 38px;
   font-weight: bolder;
   color: #161c29;
+}
+
+.budget-total {
+  display: flex;
+  height: 250px;
+  width: 100%;
+  background-color: #161c29;
+  justify-content: center;
+  align-items: center;
+}
+.budget-total h2 {
+  font-family: "Alata";
+  font-weight: 900;
+  font-size: 64px;
+}
+.budget-total h2.green {
+  color: #00e697;
+}
+.budget-total h2.red {
+  color: #ff612a;
+}
+
+.add-item-section {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.add-item-section .add-item-container {
+  height: 75px;
 }
