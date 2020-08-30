@@ -14,6 +14,7 @@ var EditItemModalComponent = /** @class */ (function () {
     EditItemModalComponent.prototype.ngOnInit = function () {
     };
     EditItemModalComponent.prototype.onSubmitted = function (updatedItem) {
+        console.log(updatedItem);
     };
     __decorate([
         core_1.Input()

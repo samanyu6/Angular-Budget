@@ -1,5 +1,5 @@
 import { Component, OnInit, Input } from '@angular/core';
-import { BudgetItem } from 'src/repository/models/budget-item';
+import { BudgetItem } from 'src/repository/models/budget-item'; 
 
 
 @Component({
@@ -17,7 +17,7 @@ export class EditItemModalComponent implements OnInit {
   }
 
   onSubmitted(updatedItem: BudgetItem){
-
+    console.log(updatedItem);
   }
 
 }
