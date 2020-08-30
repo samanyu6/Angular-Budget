@@ -10,9 +10,13 @@ exports.BudgetItemCardComponent = void 0;
 var core_1 = require("@angular/core");
 var BudgetItemCardComponent = /** @class */ (function () {
     function BudgetItemCardComponent() {
+        this.xClick = new core_1.EventEmitter();
     }
     BudgetItemCardComponent.prototype.ngOnInit = function () {
         this.isIncome = this.item.amount > 0 ? true : false;
+    };
+    BudgetItemCardComponent.prototype.onXClick = function () {
+        this.xClick.emit();
     };
     __decorate([
         core_1.Input()
@@ -20,6 +24,9 @@ var BudgetItemCardComponent = /** @class */ (function () {
     __decorate([
         core_1.Input()
     ], BudgetItemCardComponent.prototype, "isIncome");
+    __decorate([
+        core_1.Output()
+    ], BudgetItemCardComponent.prototype, "xClick");
     BudgetItemCardComponent = __decorate([
         core_1.Component({
             selector: 'app-budget-item-card',

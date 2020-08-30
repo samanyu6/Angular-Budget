@@ -25,6 +25,7 @@ export class AddItemFormComponent implements OnInit {
     
     // sending the form value to the listening component.
     this.formSubmit.emit(form.value);
+    form.reset();
   }
 
 }

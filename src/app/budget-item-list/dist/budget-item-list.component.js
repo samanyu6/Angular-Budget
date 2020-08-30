@@ -10,12 +10,19 @@ exports.BudgetItemListComponent = void 0;
 var core_1 = require("@angular/core");
 var BudgetItemListComponent = /** @class */ (function () {
     function BudgetItemListComponent() {
+        this["delete"] = new core_1.EventEmitter();
     }
     BudgetItemListComponent.prototype.ngOnInit = function () {
+    };
+    BudgetItemListComponent.prototype.onDelete = function (item) {
+        this["delete"].emit(item);
     };
     __decorate([
         core_1.Input()
     ], BudgetItemListComponent.prototype, "budgetItems");
+    __decorate([
+        core_1.Output()
+    ], BudgetItemListComponent.prototype, "delete");
     BudgetItemListComponent = __decorate([
         core_1.Component({
             selector: 'app-budget-item-list',

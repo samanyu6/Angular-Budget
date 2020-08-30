@@ -22,6 +22,7 @@ var AddItemFormComponent = /** @class */ (function () {
     AddItemFormComponent.prototype.onSubmit = function (form) {
         // sending the form value to the listening component.
         this.formSubmit.emit(form.value);
+        form.reset();
     };
     __decorate([
         core_1.Input()

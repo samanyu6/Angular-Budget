@@ -17,6 +17,10 @@ var MainPageComponent = /** @class */ (function () {
     MainPageComponent.prototype.addItem = function (newItem) {
         this.budgetItems.push(newItem);
     };
+    MainPageComponent.prototype.deleteItem = function (newItem) {
+        var index = this.budgetItems.indexOf(newItem);
+        this.budgetItems.splice(index, 1);
+    };
     MainPageComponent = __decorate([
         core_1.Component({
             selector: 'app-main-page',
