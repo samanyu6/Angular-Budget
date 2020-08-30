@@ -12,7 +12,11 @@ var BudgetItemCardComponent = /** @class */ (function () {
     function BudgetItemCardComponent() {
     }
     BudgetItemCardComponent.prototype.ngOnInit = function () {
+        this.isIncome = this.item.amount > 0 ? true : false;
     };
+    __decorate([
+        core_1.Input()
+    ], BudgetItemCardComponent.prototype, "item");
     __decorate([
         core_1.Input()
     ], BudgetItemCardComponent.prototype, "isIncome");
