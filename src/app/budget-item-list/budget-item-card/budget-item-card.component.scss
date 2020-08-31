@@ -48,6 +48,8 @@
     cursor: pointer;
 
     .description {
+        font-family: 'Alata';
+        font-weight: 600;
         flex-grow: 1;
         font-size: 20px;
     }
@@ -55,6 +57,8 @@
     .amount {
         padding :5px;
         border-radius: 3px;
+        font-family: 'Alata';
+        font-weight: 600;
     }
 
     &:hover {

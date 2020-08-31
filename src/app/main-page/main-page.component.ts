@@ -1,4 +1,4 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, OnInit, Input } from '@angular/core';
 import { BudgetItem } from 'src/repository/models/budget-item';
 
 @Component({
@@ -10,6 +10,8 @@ export class MainPageComponent implements OnInit {
 
   budgetItems: BudgetItem[] = new Array<BudgetItem>();
 
+  @Input() totalSum: number = 0;
+
   constructor() { }
 
   ngOnInit(): void {
@@ -17,11 +19,13 @@ export class MainPageComponent implements OnInit {
 
   addItem(newItem: BudgetItem){
     this.budgetItems.push(newItem); 
+    this.totalSum+=newItem.amount;
   }
 
   deleteItem(newItem: BudgetItem){
     let index = this.budgetItems.indexOf(newItem);
     this.budgetItems.splice(index,1);
+    this.totalSum-=newItem.amount;
   }
 
 }

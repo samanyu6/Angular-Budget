@@ -9,7 +9,6 @@ import { BudgetItemListComponent } from './budget-item-list/budget-item-list.com
 import { BudgetItemCardComponent } from './budget-item-list/budget-item-card/budget-item-card.component';
 
 import { FormsModule } from '@angular/forms';
-import { EditItemModalComponent } from './edit-item-modal/edit-item-modal.component';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 
 @NgModule({
@@ -19,7 +18,6 @@ import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
     AddItemFormComponent,
     BudgetItemListComponent,
     BudgetItemCardComponent,
-    EditItemModalComponent
   ],
   imports: [
     BrowserModule,
